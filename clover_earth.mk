@@ -14,6 +14,10 @@ $(call inherit-product, device/xiaomi/earth/device.mk)
 # Inherit some common Clover stuff.
 $(call inherit-product, vendor/clover/config/common_full_phone.mk)
 
+TARGET_SUPPORTS_GOOGLE_RECORDER := true
+TARGET_SUPPORTS_QUICK_TAP := false
+TARGET_FACE_UNLOCK_SUPPORTED := false
+
 PRODUCT_NAME := clover_earth
 PRODUCT_DEVICE := earth
 PRODUCT_MANUFACTURER := Xiaomi
