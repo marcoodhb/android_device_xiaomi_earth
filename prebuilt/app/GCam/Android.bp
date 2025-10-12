@@ -1,0 +1,16 @@
+android_app_import {
+    name: "gcamlite",
+    apk: "gcam.apk", 
+    overrides: [
+        "Snap",
+        "Camera2",
+        "Aperture",
+        "GCamGOPrebuilt-V3",
+    ],
+    owner: "google",
+    presigned: true,
+    dex_preopt: {
+        enabled: false,
+    },
+    product_specific: true,
+}
