@@ -1,0 +1,1 @@
+allow init proc_sched_migration_cost_ns:file rw_file_perms;
