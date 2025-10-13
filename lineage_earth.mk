@@ -14,6 +14,20 @@ $(call inherit-product, device/xiaomi/earth/device.mk)
 # Inherit some common LineageOS stuff.
 $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 
+# Axion
+TARGET_DISABLE_EPPE := true
+AXION_CAMERA_REAR_INFO := 50,0.08
+AXION_CAMERA_FRONT_INFO := 5
+TARGET_INCLUDES_LOS_PREBUILTS := true
+AXION_MAINTAINER := Marco
+AXION_PROCESSOR := Mediatek_Helio_G85
+PERF_GOV_SUPPORTED ?= true
+PERF_DEFAULT_GOV ?= schedutil
+PERF_ANIM_OVERRIDE ?= false
+GPU_FREQS_PATH := /sys/kernel/ged/hal/opp_logs
+GPU_MIN_FREQ_PATH := /sys/module/ged/parameters/gpu_bottom_freq
+TARGET_IS_LOW_RAM ?= true
+
 PRODUCT_NAME := lineage_earth
 PRODUCT_DEVICE := earth
 PRODUCT_MANUFACTURER := Xiaomi
