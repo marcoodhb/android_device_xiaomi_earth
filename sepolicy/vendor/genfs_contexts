@@ -35,3 +35,9 @@ genfscon sysfs /devices/platform/10238000.gce/wakeup u:object_r:sysfs_wakeup:s0
 genfscon sysfs /devices/platform/11004000.i2c7/i2c-7/7-006a/wakeup u:object_r:sysfs_wakeup:s0
 genfscon sysfs /devices/platform/15020000.imgsys_config/wakeup u:object_r:sysfs_wakeup:s0
 genfscon sysfs /devices/virtual/input/input2/wakeup u:object_r:sysfs_wakeup:s0
+
+# Axion tune
+genfscon proc /sys/vm/vfs_cache_pressure            u:object_r:proc_drop_caches:s0
+genfscon proc /sys/vm/dirty_ratio                   u:object_r:proc_dirty:s0
+genfscon sysfs /sys/kernel/ged/hal/opp_logs                     u:object_r:sysfs_gpu:s0
+genfscon sysfs /sys/module/ged/parameters/gpu_bottom_freq       u:object_r:sysfs_gpu:s0
