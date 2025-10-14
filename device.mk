@@ -226,6 +226,10 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     PowerOffAlarm
 
+#Camera
+PRODUCT_PACKAGES += \
+    gcamlite
+
 # Properties
 include $(LOCAL_PATH)/vendor_logtag.mk
 
