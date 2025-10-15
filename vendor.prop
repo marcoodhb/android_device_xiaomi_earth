@@ -220,3 +220,10 @@ ro.vendor.wifi.sap.concurrent.iface=ap1
 ro.vendor.wifi.sap.interface=ap0
 ro.vendor.wlan.chrdev=wmt_chrdev_wifi
 ro.vendor.wlan.gen=gen4m
+
+# Enable or disable ScrollOptimizer globally
+persist.sys.perf.scroll_opt=true
+
+# Heavy app handling mode
+persist.sys.perf.scroll_opt.heavy_app=1
+
