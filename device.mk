@@ -214,6 +214,10 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     PowerOffAlarm
 
+#Camera
+PRODUCT_PACKAGES += \
+    gcamlite
+
 # Properties
 include $(LOCAL_PATH)/vendor_logtag.mk
 
@@ -284,3 +288,11 @@ PRODUCT_COPY_FILES += \
 
 # Inherit the proprietary files
 $(call inherit-product, vendor/xiaomi/earth/earth-vendor.mk)
+
+# Sign
+SIGNING_KEY_PATH ?= certs
+RELEASE_KEY := $(SIGNING_KEY_PATH)/releasekey
+SIGNING_KEY_PATH ?= certs
+RELEASE_KEY := $(SIGNING_KEY_PATH)/releasekey
+PRODUCT_DEFAULT_DEV_CERTIFICATE := $(RELEASE_KEY)
+PRODUCT_OTA_PUBLIC_KEYS := $(RELEASE_KEY)
