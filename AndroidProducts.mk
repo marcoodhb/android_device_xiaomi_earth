@@ -5,4 +5,4 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/lineage_earth.mk
+    $(LOCAL_DIR)/custom_earth.mk

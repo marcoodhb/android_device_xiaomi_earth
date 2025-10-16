@@ -75,10 +75,6 @@ PRODUCT_COPY_FILES += \
 
 $(call soong_config_set,android_hardware_audio,skip_speaker_layout_channel_mask_field,true)
 
-# Bootanimation
-TARGET_SCREEN_HEIGHT := 1650
-TARGET_SCREEN_WIDTH := 720
-
 # Cgroup
 PRODUCT_COPY_FILES += \
     system/core/libprocessgroup/profiles/cgroups_30.json:$(TARGET_COPY_OUT_VENDOR)/etc/cgroups.json \
@@ -283,6 +279,8 @@ PRODUCT_PACKAGES += \
 
 PRODUCT_COPY_FILES += \
     vendor/qcom/opensource/vibrator/excluded-input-devices.xml:$(TARGET_COPY_OUT_VENDOR)/etc/excluded-input-devices.xml
+
+TARGET_BOOT_ANIMATION_RES := 1080
 
 # Wi-Fi
 PRODUCT_PACKAGES += \
