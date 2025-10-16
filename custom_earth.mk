@@ -14,6 +14,7 @@ $(call inherit-product, device/xiaomi/earth/device.mk)
 # Inherit some common PixelOS stuff.
 $(call inherit-product, vendor/custom/config/common_full_phone.mk)
 
+PRODUCT_NO_CAMERA := true
 PRODUCT_NAME := custom_earth
 PRODUCT_DEVICE := earth
 PRODUCT_MANUFACTURER := Xiaomi
