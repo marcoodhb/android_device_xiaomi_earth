@@ -289,6 +289,8 @@ PRODUCT_COPY_FILES += \
 # Inherit the proprietary files
 $(call inherit-product, vendor/xiaomi/earth/earth-vendor.mk)
 
+PRODUCT_OTA_ENFORCE_VINTF_KERNEL_REQUIREMENTS := false
+
 # Sign
 SIGNING_KEY_PATH ?= certs
 RELEASE_KEY := $(SIGNING_KEY_PATH)/releasekey
