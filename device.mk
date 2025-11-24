@@ -218,6 +218,10 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     gcamlite
 
+PRODUCT_PACKAGES += \
+    RevampedFMRadio \
+    libmtkfmjni
+
 # Properties
 include $(LOCAL_PATH)/vendor_logtag.mk
 
